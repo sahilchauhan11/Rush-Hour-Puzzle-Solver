@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Playfair Display with different weights */
+.playfair-display-400 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    box-sizing: border-box;
+  
+}
+.playfair-display-700 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Roboto Condensed */
+.roboto-condensed-300 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-condensed-900 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.roboto-condensed-400 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Metal Mania */
+.metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lighthouse-light {
+ 
+  background-color:  rgba(255, 255, 163, 0.3); /* beam width */
+  border-bottom: 200px solid transparent;              /* optional tilt */
+  rotate: 10deg;
+  
+   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    filter: blur(10px);
+  
+  /* Optional animation sweep */
+  animation: sweep 6s linear infinite;
+}
+
+@keyframes sweep {
+  0% {
+    transform: rotate(-20deg) scaleY(0.7);
+    opacity: 0.4;
+  }
+  50% {
+    transform: rotate(0deg) scaleY(2); /* expands beam height */
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(40deg) scaleY(0.7);
+    opacity: 0.4;
+  }
+}
